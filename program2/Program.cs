@@ -6,11 +6,11 @@ if (numberB > numberA)
     {
         max = numberB;
     }
-    else 
-        if (numberB < numberC)
-        {
-            max = numberC;
-        }
+        else 
+            if (numberA < numberC)
+            {
+                max = numberC;
+            }
 Console.Write ("numberA="); Console.WriteLine (numberA);
 Console.Write ("numberB="); Console.WriteLine (numberB);
 Console.Write ("numberC="); Console.WriteLine (numberC);
