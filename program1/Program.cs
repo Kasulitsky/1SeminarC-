@@ -1,4 +1,5 @@
-﻿int numberA = new Random().Next(-10,10);
+﻿// принимает да числа, выдает какое большее, какое меньшее.
+int numberA = new Random().Next(-10,10);
 int numberB = new Random().Next(-10,10);
 int max = (0);
 int min = (0);
