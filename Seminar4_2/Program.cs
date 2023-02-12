@@ -10,6 +10,7 @@ int num2 = 0;
 int num3 = 0;
 int num4 = 0;
 int num5 = 0;
+int num6 = 0;
 if (number > 0)     
 {
     if (number < 10) { numberA = number ;}
@@ -23,6 +24,9 @@ if (number > 0)
     else if (number > 9999 && number < 100000)
             { num1 = number / 10000; num2 = (number / 1000) % 10; num3 = (number / 100) % 10; num4 = (number / 10) % 10; 
             num5 = number % 10; numberA = num1 + num2 + num3 + num4; }
+    else if (number > 99999 && number < 1000000)
+            { num1 = number / 100000; num2 = (number / 10000) % 10; num3 = (number / 1000) % 10; num4 = (number / 100) % 10; 
+            num5 = (number / 10) % 10; num6 = number % 10; numberA = num1 + num2 + num3 + num4; }
     Console.WriteLine(numberA);          
 }
 else {
