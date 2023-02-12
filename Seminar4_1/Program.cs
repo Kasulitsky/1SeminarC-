@@ -2,14 +2,16 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-double Exponentiate(int A, int B)
+double Exponentiate(double A, double B)
 {
     Console.WriteLine("введите первое число");
-    int f = Convert.ToInt32 (Console.ReadLine ());
+    double f = Convert.ToInt32 (Console.ReadLine ());
     Console.WriteLine("введите второе число");
-    int s = Convert.ToInt32 (Console.ReadLine ());
+    double s = Convert.ToInt32 (Console.ReadLine ());
     double result = Math.Pow (f, s);
-    return result; 
+    return result;
 }
+Console.WriteLine(Exponentiate (0,0));
 
-Console.WriteLine (Exponentiate (3, 2));
+
+
