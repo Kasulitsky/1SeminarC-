@@ -1,6 +1,5 @@
 ﻿// Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 
-Console.WriteLine("Hello, World!");
 double [] array = new double [9]; 
 int n = array.Length;
 int i = 0; 
