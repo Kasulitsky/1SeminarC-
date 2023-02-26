@@ -1,8 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 double [,] CreateArray () 
 {
-    Console.WriteLine ("задайте размерноть двухмерного массива");
+    Console.WriteLine ("задайте кол-во строк");
     int a = Convert.ToInt32 (Console.ReadLine());
+    Console.WriteLine ("задайте кол-во столбцов");
     int b = Convert.ToInt32 (Console.ReadLine());
     double [,] array = new double [a, b];
     for (int i = 0; i < array.GetLength(0); i++)
@@ -10,8 +11,9 @@ double [,] CreateArray ()
         for (int j = 0; j < array.GetLength(1); j++)
         {
          array [i,j] = new Random (). NextDouble () * 10;
-        Console.WriteLine(array [i,j]);   
+        Console.Write($"{array [i,j]}   ");   
         }
+    Console.WriteLine();
     }
     return array;
 }
