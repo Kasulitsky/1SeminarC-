@@ -22,7 +22,7 @@ int [,] AcceptMeaning ()
     int i = Convert.ToInt32 (Console.ReadLine()); 
     Console.WriteLine ("введите номер столбца");
     int j = Convert.ToInt32 (Console.ReadLine());
-    if (i <= matrix.GetLength(0) & j <= matrix.GetLength(1)) 
+    if (i <= matrix.GetLength(0) & j < matrix.GetLength(1)) 
         { Console.WriteLine ($"{matrix [i,j]}");}
     else
     {
