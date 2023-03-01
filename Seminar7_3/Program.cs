@@ -1,4 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+
+Например, задан массив:
 double [,] CreateMassiv() 
 {
     double [,] array = new double [4,4];
@@ -41,6 +43,8 @@ for (int j = 1; j < massiv.GetLength(1);)
 }
 
 // аналогично для следующих столбцов..  
+
+
 // хотел создать метод, но не понял как объявить аргументы, что бы можно было там подставлять, 
 
 // double [,] FindAverege (int a, int b)

@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
 double [,] CreateArray () 
 {
     Console.WriteLine ("задайте кол-во строк");
