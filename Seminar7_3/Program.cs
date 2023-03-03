@@ -15,14 +15,16 @@ double [,] CreateMassiv()
     }
     return array;
 }
-
 double [,] massiv = CreateMassiv();
 
+double [] FindAverege (double [,] arr)
+{
+double [] mas = new double [arr.GetLength(1)];
 double sum1 = 0;
 double av1 = 0;
-for (int j = 0; j < massiv.GetLength(1); j++)
+for (int j = 0; j < arr.GetLength(1); j++)
 {
-    for (int i = 0; i < massiv.GetLength(0); i++)
+    for (int i = 0; i < arr.GetLength(0); i++)
         {
             sum1 = sum1 + massiv [i,j];
             av1 = sum1 / massiv.GetLength(0); 
@@ -31,6 +33,9 @@ for (int j = 0; j < massiv.GetLength(1); j++)
      sum1 = 0;
  av1 = 0;  
 }
+return mas;
+}
+FindAverege(massiv);
 
   
 
@@ -40,7 +45,7 @@ for (int j = 0; j < massiv.GetLength(1); j++)
 
 // хотел создать метод, но не понял как объявить аргументы, что бы можно было там подставлять, 
 
-// double [,] FindAverege (int )
+// double [] FindAverege (int [,] arr)
 // {
     
 // double [,] massiv = CreateMassiv();
